@@ -2,11 +2,10 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-
 let package = Package(
     name: "GenesysCloudMessengerTransport",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -16,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GenesysCloudMessengerTransport",
-            url: "https://github.com/MyPureCloud/genesys-messenger-transport-mobile-sdk/releases/download/v0.0.1/MessengerTransport.xcframework.zip",
-            checksum: "efeec053781e6123b7735990ce5ea1d3eb577c166bbe66bcb424903a7afa5a21"
+            url: "https://github.com/MyPureCloud/genesys-messenger-transport-mobile-sdk/releases/download/v2.16.0/MessengerTransport.xcframework.zip",
+            checksum: "4958b7521fa9c5288a0a68774b6aed8a6704cfd18e6abb637b070d91ae4a4ca7"
         ),
         .testTarget(name: "PackageTests", dependencies: [
             "GenesysCloudMessengerTransport"
